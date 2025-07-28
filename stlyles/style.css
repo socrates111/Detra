@@ -244,8 +244,12 @@
 
         /* Secondary CTA */
         .secondary-cta {
-            background-color: #1c2636;
-            padding: 64px 0;
+            background-color: #BBEAA6; /* warm light green */
+            padding: 60px 1px;
+            text-align: left;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 100, 0, 0.1);
+            width: 100%;
         }
 
         .secondary-cta-content {
@@ -257,7 +261,7 @@
 
         .secondary-cta-text {
             flex: 2;
-            color: white;
+            color: black;
             font-size: 18px;
         }
 
@@ -318,12 +322,12 @@
             transform: scale(1.1);
         }
 
-        #conditioning_img{
+        .service-icon img {
             width: 100%;
         }
 
-        #heat_img{
-            width: 100%;
+        .second-raw {
+            margin-top: 3rem;
         }
 
         .service-title {
@@ -339,7 +343,7 @@
 
         /* Financing Section */
         .comfort-banner {
-            background-color: #1c2636;
+            background-color: #BBEAA6;
             padding: 64px 0;
         }
 
@@ -379,24 +383,24 @@
         }
 
         /* About Section */
-        .about {
+        .about, .contractors {
             padding: 80px 0;
             background: white;
         }
 
-        .about-header {
+        .about-header, .contractors-header {
             text-align: center;
             margin-bottom: 64px;
         }
 
-        .about-title {
+        .about-title, .contractors-title {
             font-size: 2.5rem;
             font-weight: 700;
             color: #1c2636;
             margin-bottom: 32px;
         }
 
-        .about-description {
+        .about-description, .contractors-description {
             max-width: 1000px;
             margin: 0 auto;
             font-size: 18px;
@@ -404,7 +408,7 @@
             line-height: 1.7;
         }
 
-        .about-description p {
+        .about-description p, .contractors-description p {
             margin-bottom: 24px;
         }
 
@@ -600,6 +604,46 @@
         .area-item:hover {
             color: #33b1d0;
         }
+
+        /* Contractors parent div */
+        .contractor-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .contractor-row {
+            display: flex;
+            justify-content: center;
+            gap: 100px;
+            flex-wrap: wrap;
+        }
+
+        .center-row {
+            justify-content: center;
+            margin-top: 20px;
+            gap:130px;
+        }
+
+        .contractor-div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .partner_img {
+            max-width: 100%;
+            max-height: 100px;
+            object-fit: contain;
+        }
+
+
+
+
+
 
         /* Contact Form */
         .contact {
