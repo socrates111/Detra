@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="eka">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,168 +9,99 @@
 <body>
     <!-- Header -->
     <header>
-        <!-- Top Bar -->
-        <div class="top-bar">
-            <div class="container">
-                <div class="top-bar-content">
-                    <div class="top-bar-left">
-                        <!-- Serving the greater Pflugerville, TX 78660 Metro Area -->
-                    </div>
-                    <div class="top-bar-right">
-                        <a href="tel:5125811719" class="phone-link">
-                            <svg class="icon" viewBox="0 0 24 24">
-                                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
-                            </svg>
-                            დაგვირეკეთ (032) 123-456
-                        </a>
-                        <a href="#" class="btn btn-teal">მოგვწერეთ</a>
-                    </div>
+       
+       <!-- Main Navigation -->
+        <nav class="main-nav" role="navigation" aria-label="Primary">
+        <div class="container">
+            <div class="nav-content">
+            <div class="logo">
+                <a href="index.html" class="logo-link" aria-label="Detra home">
+                <img src="IMG/logo/Detra_logo.png" alt="Detra logo air conditioning heating">
+                </a>
+            </div>
+
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item">
+                <a href="#" class="nav-link" aria-haspopup="true" aria-expanded="false">
+                    სერვისები
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M7 10l5 5 5-5z"/>
+                    </svg>
+                </a>
+                <div class="dropdown" role="menu">
+                    <a href="ac.html" role="menuitem">კონდიცირება</a>
+                    <a href="#" role="menuitem">გათბობა</a>
+                    <a href="#" role="menuitem">ელექტროობა</a>
+                    <a href="#" role="menuitem">ვენტილაცია</a>
                 </div>
+                </li>
+
+                <li class="nav-item">
+                <a href="projects.html" class="nav-link">პროექტები</a>
+                </li>
+
+                <li class="nav-item">
+                <a href="#" class="nav-link" aria-haspopup="true" aria-expanded="false">
+                    ჩვენს შესახებ
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M7 10l5 5 5-5z"/>
+                    </svg>
+                </a>
+                <div class="dropdown" role="menu">
+                    <a href="#" role="menuitem">ჩვენი გუნდი</a>
+                    <a href="#" role="menuitem">კარიერა</a>
+                </div>
+                </li>
+
+                <li class="nav-item">
+                <a href="contact.html" class="nav-link">კონტაქტი</a>
+                </li>
+            </ul>
+
+            <button class="mobile-menu-btn" aria-controls="navMenu" aria-expanded="false" aria-label="Open menu">
+                <span class="mm-line"></span>
+                <span class="mm-line"></span>
+                <span class="mm-line"></span>
+            </button>
             </div>
         </div>
-
-        <!-- Main Navigation -->
-        <nav class="main-nav">
-            <div class="container">
-                <div class="nav-content">
-                    <div class="logo">
-                        <img src="IMG/logo/Detra_logo.png" alt="Detra logo air conditioning heating">
-                    </div>
-
-                    <ul class="nav-menu">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                სერვისები
-                                <svg class="icon" viewBox="0 0 24 24">
-                                    <path d="M7 10l5 5 5-5z"/>
-                                </svg>
-                            </a>
-                            <div class="dropdown">
-                                <a href="#">კონდიცირება</a>
-                                <a href="#">გათბობა</a>
-                                <a href="#">ელექტროობა
-                                    
-                                </a>
-                                <a href="#">ვენტილაცია</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                პროექტები
-                                <svg class="icon" viewBox="0 0 24 24">
-                                    <path d="M7 10l5 5 5-5z"/>
-                                </svg>
-                            </a>
-                            <div class="dropdown">
-                                <a href="#">გამათბობლის შეკეთება</a>
-                                <a href="#">გამათბობლის დაყენება</a>
-                                <a href="#">გათბობის ტექნიკური მომსახურება</a>
-                            </div>
-                        </li>
-                        <!-- <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                ელექტროობა
-                                <svg class="icon" viewBox="0 0 24 24">
-                                    <path d="M7 10l5 5 5-5z"/>
-                                </svg>
-                            </a>
-                            <div class="dropdown">
-                                <a href="#">გამათბობლის შეკეთება</a>
-                                <a href="#">გამათბობლის დაყენება</a>
-                                <a href="#">გათბობის ტექნიკური მომსახურება</a>
-                            </div>
-                        </li> -->
-                        <!-- <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                ვენტილაცია
-                                <svg class="icon" viewBox="0 0 24 24">
-                                    <path d="M7 10l5 5 5-5z"/>
-                                </svg>
-                            </a>
-                            <div class="dropdown">
-                                <a href="#">მონტაჟი</a>
-                                <a href="#">შეკეთება</a>
-                                <a href="#">მოვლა</a>
-                            </div>
-                        </li> -->
-                        <!-- <li class="nav-item">
-                            <a href="#" class="nav-link">Financing</a>
-                        </li> -->
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                ჩვენს შესახებ
-                                <svg class="icon" viewBox="0 0 24 24">
-                                    <path d="M7 10l5 5 5-5z"/>
-                                </svg>
-                            </a>
-                            <div class="dropdown">
-                                <a href="#">ჩვენი გუნდი</a>
-                                <a href="#">კონტაქტი</a>
-                                <a href="#">კარიერა</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a href="contact.html" class="nav-link">კონტაქტი</a>
-                        </li>
-                    </ul>
-
-                    <button class="mobile-menu-btn">☰</button>
-                </div>
-            </div>
         </nav>
     </header>
 
     <!-- Hero Section -->
     <section class="hero">
+        <video class="hero-video" autoplay muted loop playsinline>
+            <source src="video/3010813-hd_1920_1080_24fps.mp4" type="video/mp4">
+            თქვენი ბრაუზერი არ უჭერს მხარს ვიდეოს.
+        </video>
         <div class="container">
-            <!-- <p class="hero-subtitle">Offering professional HVAC services at competitive prices.</p> -->
             <h1 class="hero-title">
                 კომპანია Detra არის თქვენი სანდო პროფესიონალთა მომსახურების ჯგუფი მთლიან საქართველოში
             </h1>
-            <div class="hero-buttons">
-                <a href="#" class="btn btn-dark">კონტაქტი</a>
-            </div>
         </div>
-    </section>
+</section>
 
-    <!-- Secondary CTA -->
-    <section class="secondary-cta">
-        <div class="container">
-            <div class="secondary-cta-content">
-                <div class="secondary-cta-text">
-                    <p>გათბობა-გაგრილების სერვისები — ჰაერის კონდიციონერების შეკეთებიდან დაწყებული, მინი-სპლიტ სისტემების მონტაჟით დასრულებული.
-                        თუ გადაღლილი ხართ ზაფხულის სიცხით და გსურთ სუფთა, გრილი ჰაერი სახლში ან ოფისში, დაგვიკავშირდით!
-                        ჩვენ დაგეხმარებით ნებისმიერი ტიპის გათბობისა და გაგრილების სამუშაოში.
-                    </p>
-                </div>
-                <div class="secondary-cta-button">
-                    <a href="#" class="btn btn-teal">დაჯავშნეთ ვიზიტი</a>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Services Grid -->
     <section class="services">
         <div class="container">
             <div class="services-header">
-                <h2 class="services-title">რით შეგვიძლია დაგეხმაროთ კონდიციონერის, გათბობისა და სანტექნიკის სფეროში?</h2>
-                <p class="services-subtitle">დააწკაპუნეთ ქვემოთ მოცემულ რომელიმე მომსახურებაზე, რომ გაიგოთ მეტი ან დაჯავშნეთ ვიზიტი ონლაინ</p>
+                <h2 class="services-title">სერვისები</h2>
             </div>
 
             <div class="services-grid">
                 <div class="service-item">
                     <div class="service-icon ac-icon">
-                        <img src="img/service_icons/heat.png"  alt="">
+                        <a href="#"><img src="img/service_icons/heat.png"  alt=""></a>
                     </div>
-                    <h3 class="service-title">კონდიცირება</h3>
+                    <h3 class="service-title">გათბობა</h3>
                 </div>
 
                 <div class="service-item">
                     <div class="service-icon heating-icon">
-                        <img src="img/service_icons/ac.png"  alt="">
+                        <a href="ac.html"><img src="img/service_icons/ac.png"  alt=""></a>
                     </div>
-                    <h3 class="service-title">გათბობა</h3>
+                    <h3 class="service-title">კონდიცირება</h3>
                 </div>
                 <div class="service-item">
                     <div class="service-icon heating-icon">
@@ -179,28 +110,6 @@
                     <h3 class="service-title">ელექტროობა</h3>
                 </div>
             </div>
-            <div class="services-grid second-raw">
-                <div class="service-item">
-                    <div class="service-icon ac-icon">
-                        <img src="img/service_icons/ventilation.png"  alt="">
-                    </div>
-                    <h3 class="service-title">ვენტილაცია</h3>
-                </div>
-
-                <div class="service-item">
-                    <div class="service-icon heating-icon">
-                        <img src="img/service_icons/water.png"  alt="">
-                    </div>
-                    <h3 class="service-title">წყალმომარაგება</h3>
-                </div>
-                <div class="service-item">
-                    <div class="service-icon heating-icon">
-                        <img src="IMG/service_icons/santechnic.png"  alt="">
-                    </div>
-                    <h3 class="service-title">სანტექნიკა</h3>
-                </div>
-            </div>
-        </div>
     </section>
 
     <!-- Financing Section -->
@@ -230,7 +139,6 @@
                         შესაბამისად, პრიორიტეტი მხოლოდ ხარისხიანი პროდუქციისა
                         და სერვისის მიწოდებაა.
                     </p>
-                
                     <div class="parent">
                     <div class="partner_div1 part_divs"><img class="partner_img" src="IMG/partners/UntesLogo_b.png" alt=""></div>
                     <div class="partner_div2 part_divs"><img class="partner_img" src="IMG/partners/schako_logo_170x55_retina.png" alt=""></div>
@@ -250,42 +158,24 @@
         </div>
     </section>
 
-    <!-- Location Section -->
-    <section class="location">
+    <!-- Secondary CTA -->
+    <section class="secondary-cta">
         <div class="container">
-            <div class="location-content">
-                <div class="business-info">
-                    <h2 class="business-title">Detra</h2>
-
-                    <div class="info-section">
-                        <h3 class="info-title">სამუშაო საათები</h3>
-                        <div class="info-content">
-                            <div>ორშ-პარ: 9:00 AM – 18:00</div>
-                            <!-- <div>Sat: 9:00 AM – 3:00 PM</div>
-                            <div>Sun: Closed</div> -->
-                        </div>
-                    </div>
-
-                    <div class="info-section">
-                        <h3 class="info-title">მისამართი</h3>
-                        <div class="info-content">
-                            <a href="https://www.google.com/maps/place/Altruistic+AC+%26+Heating/@30.4134547,-97.625444,15z" target="_blank">
-                                ჩხლამფურთაძის 69<br>
-                                თბილისი, 0112
-                            </a>
-                        </div>
-                    </div>
+            <div class="secondary-cta-content">
+                <div class="secondary-cta-text">
+                    <p>გათბობა-გაგრილების სერვისები — ჰაერის კონდიციონერების შეკეთებიდან დაწყებული, მინი-სპლიტ სისტემების მონტაჟით დასრულებული.
+                        თუ გადაღლილი ხართ ზაფხულის სიცხით და გსურთ სუფთა, გრილი ჰაერი სახლში ან ოფისში, დაგვიკავშირდით!
+                        ჩვენ დაგეხმარებით ნებისმიერი ტიპის გათბობისა და გაგრილების სამუშაოში.
+                    </p>
                 </div>
-
-                <div class="map-container">
-                    <div class="map-frame">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2993.0158206486064!2d44.8313!3d41.6941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40440cfc6742a14b%3A0x7d2252b48711e3c6!2sFreedom%20Square%2C%20Tbilisi!5e0!3m2!1sen!2sge!4v1717233340000!5m2!1sen!2sge"allowfullscreen=""></iframe>
-                    </div>
+                <div class="secondary-cta-button">
+                    <a href="#" class="btn btn-teal">დაჯავშნეთ ვიზიტი</a>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Location Section -->
     <section class="contractors">
         <div class="container">
             <div class="contractors-header">
@@ -315,41 +205,6 @@
         </div>
     </section>
 
-    <!-- Contact Form -->
-    <section class="contact">
-        <div class="container">
-            <div class="contact-header">
-                <h2 class="contact-title">დაგვიკავშირდით</h2>
-                <p class="contact-subtitle">გთხოვთ, შეიყვანოთ თქვენი ინფორმაცია ფორმაში და ჩვენ დაგიკავშირდებით.</p>
-            </div>
-
-            <form class="contact-form">
-                <div class="form-group">
-                    <div class="form-row">
-                        <input type="text" class="form-input" placeholder="სახელი" required>
-                        <input type="text" class="form-input" placeholder="გვარი" required>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <input type="tel" class="form-input" placeholder="ტელ. ნომერი" required>
-                </div>
-
-                <div class="form-group">
-                    <input type="email" class="form-input" placeholder="მეილი" required>
-                </div>
-
-                <div class="form-group">
-                    <textarea class="form-input form-textarea" placeholder="შეტყობინება" rows="5"></textarea>
-                </div>
-
-                <div class="form-submit">
-                    <button type="submit" class="btn btn-teal">გაგზავნა</button>
-                </div>
-            </form>
-        </div>
-    </section>
-
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
@@ -360,25 +215,24 @@
                     </div>
 
                     <div class="social-links">
-                        <a href="#"><img class="social-icon" src="IMG/icons/facebook.png" alt=""></a>
-                        <a href="#"><img class="social-icon" src="IMG/icons/instagram.png" alt=""></a>
-                        <a href="#"><img class="social-icon" src="IMG/icons/whatsapp.png" alt=""></a>
+                        <a href="#"><img class="social-icon" src="IMG/icons/facebook.png" alt="detra facebook"></a>
+                        <a href="#"><img class="social-icon" src="IMG/icons/linkedin.png" alt="detra linkedin"></a>
+                        <a href="#"><img class="social-icon" src="IMG/icons/whatsapp.png" alt="detra whatsapp"></a>
                     </div>
                 </div>
 
                 <div class="footer-services">
                     <div>
-                        <h3>კონდიცირება</h3>
+                        <h3>სერვისები</h3>
                         <ul class="services-list">
-                            <li><a href="#">შეკეთება</a></li>
-                            <li><a href="#">ინსტალაცია</a></li>
+                            <li><a href="#">კონდიცირება</a></li>
+                            <li><a href="#">გათბობა</a></li>
                             <li><a href="#">მოვლა</a></li>
-                            <li><a href="#">თერმოსტატის ინსტალაცია</a></li>
                         </ul>
                     </div>
 
                     <div>
-                        <h3>გათბობა</h3>
+                        <h3>პროექტები</h3>
                         <ul class="services-list">
                             <li><a href="#">მონტაჟი</a></li>
                             <li><a href="#">შეკეთება</a></li>
@@ -387,15 +241,14 @@
                     </div>
 
                     <div>
+                        <h3>ჩვენს შესახებ</h3>
                         <ul class="services-list">
-                            <li><a href="#">წყალმომარაგება</a></li>
-                            <li><a href="#">სანტექნიკა</a></li>
-                            <li><a href="#">ხანძარქრობა</a></li>
-                            <li><a href="#">სუსტი დენები</a></li>
-                            <li><a href="#">ელექტროობა</a></li>
-                            <li><a href="#">ვენტილაცია</a></li>
+                            <li><a href="#">ჩვენი გუნდი</a></li>
+                            <li><a href="#">კარიერა</a></li>
+                            <li><a href="contact.html">კონტაქტი</a></li>
                         </ul>
                     </div>
+                    
                 </div>
             </div>
 
@@ -426,5 +279,6 @@
             navMenu.style.display = navMenu.style.display === 'flex' ? 'none' : 'flex';
         });
     </script>
+    <script src="main.js"></script>
 </body>
 </html>
