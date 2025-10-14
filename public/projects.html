@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="stlyles/style.css">
+  <link rel="stylesheet" href="stlyles/project.css">
+  <title>პროექტები | DETRA</title>
+
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <nav class="main-nav">
+      <div class="container">
+        <div class="nav-content">
+          <div class="logo">
+            <a href="index.html"><img src="IMG/logo/Detra_logo.png" alt="Detra logo"></a>
+          </div>
+          <ul class="nav-menu">
+            <li class="nav-item"><a class="nav-link" href="ac.html">სერვისები</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">პროექტები</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">ჩვენს შესახებ</a></li>
+            <li class="nav-item"><a class="nav-link" href="careers.html">კარიერა</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">კონტაქტი</a></li>
+          </ul>
+          <button class="mobile-menu-btn" id="menuBtn">☰</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container wrap">
+      <div>
+        <div class="crumbs"><a href="index.html">მთავარი</a> · პროექტები</div>
+        <h1 class="title">პროექტები</h1>
+        <p class="subtitle">იხილეთ სად ვიმუშავეთ, რა გავაკეთეთ და რა ეტაპზეა თითოეული ობიექტი.</p>
+      </div>
+      <div class="hero-card">
+        <strong style="color:var(--green-dark)">სწრაფი ფილტრი</strong>
+        <div class="controls">
+          <button class="chip active" data-status="all">ყველა</button>
+          <button class="chip" data-status="done">დასრულებული</button>
+          <button class="chip" data-status="progress">მიმდინარეობს</button>
+          <button class="chip" data-status="planned">დაგეგმილი</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTROLS -->
+  <section>
+    <div class="container">
+      <div class="controls" style="margin-bottom:10px;">
+        <select id="sort" class="select" aria-label="დახარისხება">
+          <option value="name-asc">დასახელება A–Z</option>
+          <option value="name-desc">დასახელება Z–A</option>
+          <option value="status">სტატუსი</option>
+        </select>
+        <div class="search" style="margin-left:auto;">
+          <input id="q" class="input" type="search" placeholder="ძებნა: პროექტი ან მისამართი…">
+          <button id="clear" class="btn" type="button">გასუფთავება</button>
+        </div>
+      </div>
+
+      <!-- PROJECTS GRID -->
+      <div id="grid" class="grid"></div>
+      <div id="empty" class="empty" style="display:none;">ვერაფერი მოიძებნა ამ ფილტრით.</div>
+    </div>
+  </section>
+
+  <!-- FOOTER (compact) -->
+  <footer style="background:var(--dark); color:#dfe7dd; padding: 40px 0;">
+    <div class="container" style="display:flex; justify-content:space-between; gap:30px; flex-wrap:wrap;">
+      <div>
+        <img src="IMG/logo/Detra_logo.png" alt="Detra logo" height="40" />
+      </div>
+      <div>© 2018–<span id="year"></span> Detra Georgia • All Rights Reserved</div>
+    </div>
+  </footer>
+
+  <script>
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Mobile menu
+    document.getElementById('menuBtn')?.addEventListener('click', () => {
+      const menu = document.querySelector('.nav-menu');
+      if (!menu) return;
+      menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+      menu.style.flexDirection = 'column';
+      menu.style.background = '#fff';
+      menu.style.padding = '10px';
+      menu.style.borderRadius = '12px';
+    });
+
+    // --- DATA SOURCE: Edit here to add your real projects ---
+    const projects = [
+      {
+        name: "VRF სისტემა — ოფის ცენტრი",
+        address: "თბილისი, ჭავჭავაძის გამზ. 45",
+        what: "VRF გარე/შიდა ბლოკების მონტაჟი, მილგაყვანილობა, სადრენაჟე, ელექტრო კვანძები, გაშვება-რეგულირება.",
+        status: "done" // done | progress | planned
+      },
+      {
+        name: "ჰით პამპი — კერძო სახლი",
+        address: "თბილისი, დიღომი 7",
+        what: "ჰაერი-წყლის თბური ტუმბოს მონტაჟი, ბუფერული ავზი, თბოიზოლაცია, თერმოსტატები.",
+        status: "progress"
+      },
+      {
+        name: "სერვერ რუმი — ზუსტი გაგრილება",
+        address: "ბათუმი, ჭავჭავაძის 10",
+        what: "Redundant precision cooling, ამოუვარდობის სქემა, მონიტორინგი.",
+        status: "done"
+      },
+      {
+        name: "კაფე — ვენტილაცია + A/C",
+        address: "თბილისი, ვაჟა-ფშაველას 9",
+        what: "სამზარეულოს ვენტილაციის სისტემა, სუნის ფილტრაცია, დარბაზის კონდიცირება.",
+        status: "planned"
+      },
+      {
+        name: "სავაჭრო სივრცე — Multi Split",
+        address: "ქუთაისი, რუსთაველის 12",
+        what: "Multi-Split სისტემა, ესთეტიკური ტრასა, ფარული კაბელები, სადრენაჟე.",
+        status: "progress"
+      },
+      {
+        name: "საოფისე სართული — Chilled Water Fan-coil",
+        address: "თბილისი, მერკურის ბიზნესცენტრი",
+        what: "Fan-coil-ების განახლება, ჰიდრავლიკური დაბალანსება, BMS ინტეგრაცია.",
+        status: "planned"
+      }
+    ];
+
+    // --- Rendering ---
+    const grid = document.getElementById('grid');
+    const empty = document.getElementById('empty');
+    const q = document.getElementById('q');
+    const clearBtn = document.getElementById('clear');
+    const sortSelect = document.getElementById('sort');
+    const chips = document.querySelectorAll('.chip');
+
+    let activeStatus = 'all';
+    let searchText = '';
+    let sortMode = 'name-asc';
+
+    function statusLabel(s){
+      switch(s){
+        case 'done': return 'დასრულებული';
+        case 'progress': return 'მიმდინარეობს';
+        case 'planned': return 'დაგეგმილი';
+        default: return s;
+      }
+    }
+
+    function projectCard(p){
+      const wrap = document.createElement('article');
+      wrap.className = 'card';
+      wrap.innerHTML = `
+        <div class="name">${p.name}</div>
+        <div class="addr">${p.address}</div>
+        <div class="what">${p.what}</div>
+        <div class="meta">
+          <span class="status ${p.status}">${statusLabel(p.status)}</span>
+          <a class="btn" href="mailto:info@detra.example?subject=${encodeURIComponent('კითხვა პროექტზე: ' + p.name)}">დაგვიკავშირდით</a>
+        </div>
+      `;
+      return wrap;
+    }
+
+    function applyFilters(){
+      let list = [...projects];
+
+      // Filter by status
+      if(activeStatus !== 'all'){
+        list = list.filter(p => p.status === activeStatus);
+      }
+      // Search
+      if(searchText.trim()){
+        const t = searchText.toLowerCase();
+        list = list.filter(p =>
+          p.name.toLowerCase().includes(t) ||
+          p.address.toLowerCase().includes(t) ||
+          p.what.toLowerCase().includes(t)
+        );
+      }
+      // Sort
+      if(sortMode === 'name-asc'){
+        list.sort((a,b)=> a.name.localeCompare(b.name, 'ka'));
+      } else if(sortMode === 'name-desc'){
+        list.sort((a,b)=> b.name.localeCompare(a.name, 'ka'));
+      } else if(sortMode === 'status'){
+        const order = { progress: 0, planned: 1, done: 2 };
+        list.sort((a,b)=> (order[a.status] ?? 9) - (order[b.status] ?? 9) || a.name.localeCompare(b.name,'ka'));
+      }
+
+      // Render
+      grid.innerHTML = '';
+      if(list.length === 0){
+        empty.style.display = '';
+        return;
+      }
+      empty.style.display = 'none';
+      list.forEach(p => grid.appendChild(projectCard(p)));
+    }
+
+    // Events
+    chips.forEach(c => c.addEventListener('click', () => {
+      chips.forEach(x => x.classList.remove('active'));
+      c.classList.add('active');
+      activeStatus = c.dataset.status;
+      applyFilters();
+    }));
+
+    q.addEventListener('input', () => {
+      searchText = q.value;
+      applyFilters();
+    });
+
+    clearBtn.addEventListener('click', () => {
+      q.value = '';
+      searchText = '';
+      applyFilters();
+    });
+
+    sortSelect.addEventListener('change', () => {
+      sortMode = sortSelect.value;
+      applyFilters();
+    });
+
+    // Init
+    applyFilters();
+  </script>
+</body>
+</html>

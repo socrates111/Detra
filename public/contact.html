@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ge">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,57 +8,69 @@
 </head>
 <body>
     <header>
-        <!-- Main Navigation -->
-        <nav class="main-nav">
-            <div class="container">
-                <div class="nav-content">
-                    <div class="logo">
-                        <a href="index.html"><img src="IMG/logo/Detra_logo.png" alt="Detra logo air conditioning heating"></a>
-                    </div>
-
-                    <ul class="nav-menu">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                სერვისები
-                                <svg class="icon" viewBox="0 0 24 24">
-                                    <path d="M7 10l5 5 5-5z"/>
-                                </svg>
-                            </a>
-                            <div class="dropdown">
-                                <a href="ac.html">კონდიცირება</a>
-                                <a href="#">გათბობა</a>
-                                <a href="#">ელექტროობა
-                                    
-                                </a>
-                                <a href="#">ვენტილაცია</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a href="projects.html" class="nav-link">
-                                პროექტები
-                            </a>
-                        </li>
-                    
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                ჩვენს შესახებ
-                                <svg class="icon" viewBox="0 0 24 24">
-                                    <path d="M7 10l5 5 5-5z"/>
-                                </svg>
-                            </a>
-                            <div class="dropdown">
-                                <a href="#">ჩვენი გუნდი</a>
-                                <a href="#">კარიერა</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a href="contact.html" class="nav-link">კონტაქტი</a>
-                        </li>
-                    </ul>
-
-                    <button class="mobile-menu-btn">☰</button>
-                </div>
+       <!-- Main Navigation -->
+        <nav class="main-nav" role="navigation" aria-label="Primary">
+        <div class="container">
+            <div class="nav-content">
+            <div class="logo">
+                <a href="index.html" class="logo-link" aria-label="Detra home">
+                <img src="IMG/logo/Detra_logo.png" alt="Detra logo air conditioning heating">
+                </a>
             </div>
+
+            <ul class="nav-menu" id="navMenu">
+                 <li class="nav-item">
+                <a href="#" class="nav-link" aria-haspopup="true" aria-expanded="false">
+                    მთავარი
+                    <path d="M7 10l5 5 5-5z"/>
+                    </svg>
+                </a>
+                </li>
+
+                <li class="nav-item">
+                <a href="#" class="nav-link" aria-haspopup="true" aria-expanded="false">
+                    სერვისები
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M7 10l5 5 5-5z"/>
+                    </svg>
+                </a>
+                <div class="dropdown" role="menu">
+                    <a href="ac.html" role="menuitem">კონდიცირება</a>
+                    <a href="#" role="menuitem">გათბობა</a>
+                    <a href="#" role="menuitem">ელექტროობა</a>
+                    <a href="#" role="menuitem">ვენტილაცია</a>
+                </div>
+                </li>
+
+                <li class="nav-item">
+                <a href="projects.html" class="nav-link">პროექტები</a>
+                </li>
+
+                <li class="nav-item">
+                <a href="#" class="nav-link" aria-haspopup="true" aria-expanded="false">
+                    ჩვენს შესახებ
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M7 10l5 5 5-5z"/>
+                    </svg>
+                </a>
+                <div class="dropdown" role="menu">
+                    <a href="team.html" role="menuitem">ჩვენი გუნდი</a>
+                    <a href="careers.html" role="menuitem">კარიერა</a>
+                </div>
+                </li>
+
+                <li class="nav-item">
+                <a href="contact.html" class="nav-link">კონტაქტი</a>
+                </li>
+            </ul>
+
+            <button class="mobile-menu-btn" aria-controls="navMenu" aria-expanded="false" aria-label="Open menu">
+                <span class="mm-line"></span>
+                <span class="mm-line"></span>
+                <span class="mm-line"></span>
+            </button>
+            </div>
+        </div>
         </nav>
     </header>
 
