@@ -1,0 +1,54 @@
+D	.gitattributes
+D	projects.html
+R076	ac.html	public/ac.html
+A	public/careers.html
+R068	contact.html	public/contact.html
+R100	IMG/contractors/Tbc-logo-ka_GE.svg	public/img/contractors/Tbc-logo-ka_GE.svg
+R100	IMG/contractors/borjomi.jpg	public/img/contractors/borjomi.jpg
+R100	IMG/contractors/haidelberg.jpg	public/img/contractors/haidelberg.jpg
+R100	IMG/contractors/heidelbergcement.jpg	public/img/contractors/heidelbergcement.jpg
+R100	IMG/contractors/logo-fb-en.png	public/img/contractors/logo-fb-en.png
+R100	IMG/contractors/mcdonalds.jpg	public/img/contractors/mcdonalds.jpg
+R100	IMG/icons/facebook.png	public/img/icons/facebook.png
+R100	IMG/icons/instagram.png	public/img/icons/instagram.png
+R100	IMG/icons/linkedin.png	public/img/icons/linkedin.png
+R100	IMG/icons/whatsapp.png	public/img/icons/whatsapp.png
+R100	IMG/logo/Detra_logo.png	public/img/logo/Detra_logo.png
+R100	IMG/partners/7212_263517.webp	public/img/partners/7212_263517.webp
+R100	IMG/partners/DAIKIN_logo.svg.png	public/img/partners/DAIKIN_logo.svg.png
+R100	IMG/partners/Midea.svg.png	public/img/partners/Midea.svg.png
+R100	IMG/partners/SODECA.png	public/img/partners/SODECA.png
+R100	IMG/partners/UntesLogo_b.png	public/img/partners/UntesLogo_b.png
+R100	IMG/partners/chigo-logo.webp	public/img/partners/chigo-logo.webp
+R100	IMG/partners/duyar.jpeg	public/img/partners/duyar.jpeg
+R100	IMG/partners/ebittlogoteknik.png	public/img/partners/ebittlogoteknik.png
+R100	IMG/partners/oventrop.png	public/img/partners/oventrop.png
+R100	IMG/partners/remak.jpeg	public/img/partners/remak.jpeg
+R100	IMG/partners/schako_logo_170x55_retina.png	public/img/partners/schako_logo_170x55_retina.png
+R100	IMG/partners/setfil_logo.png	public/img/partners/setfil_logo.png
+R100	IMG/service_icons/Untitled design (2).png	public/img/service_icons/Untitled design (2).png
+R100	IMG/service_icons/ac.png	public/img/service_icons/ac.png
+R100	IMG/service_icons/cold_warm.png	public/img/service_icons/cold_warm.png
+R100	IMG/service_icons/cold_warm1.png	public/img/service_icons/cold_warm1.png
+R100	IMG/service_icons/electr.png	public/img/service_icons/electr.png
+R100	IMG/service_icons/heat.png	public/img/service_icons/heat.png
+R100	IMG/service_icons/santechnic.png	public/img/service_icons/santechnic.png
+R100	IMG/service_icons/ventilation.png	public/img/service_icons/ventilation.png
+R100	IMG/service_icons/water.png	public/img/service_icons/water.png
+A	public/img/team img/team.png
+R100	IMG/test/Untitled design.png	public/img/test/Untitled design.png
+R096	index.html	public/index.html
+R100	main.js	public/main.js
+A	public/projects.html
+R100	styles/ac.css	public/stlyles/ac.css
+A	public/stlyles/careers.css
+R100	styles/contact.css	public/stlyles/contact.css
+A	public/stlyles/project.css
+R099	styles/style.css	public/stlyles/style.css
+A	public/stlyles/team.css
+R100	styles/test.css	public/stlyles/test.css
+A	public/team.html
+R100	test.html	public/test.html
+A	public/video/3010813-hd_1920_1080_24fps.mp4
+D	team.html
+D	video/3010813-hd_1920_1080_24fps.mp4
